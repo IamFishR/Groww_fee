@@ -42,7 +42,7 @@
                             },
                             "stamp_duty": {
                                 "buy": "0.015",
-                                "sell": "0.015"
+                                "sell": "0.00"
                             },
                             "exchange_transaction_charges": {
                                 "buy": "0.00345",
