@@ -1,0 +1,195 @@
+{
+    "fees": {
+        "stock": {
+            "groww": {
+                "groww_charges": {
+                    "account_opening": "0.00",
+                    "amc": "0.00",
+                    "brokerage": {
+                        "equity": {
+                            "rate_percent": "0.1",
+                            "max": "20.00",
+                            "min": "5.00"
+                        },
+                        "future_options": "20.00",
+                        "upi_mandate": {
+                            "rate_percent": "1.0",
+                            "max": null
+                        }
+                    }
+                },
+                "non_groww_charges": {
+                    "equity": {
+                        "intraday": {
+                            "securities_transaction_tax_stt": {
+                                "buy": "0.00",
+                                "sell": "0.025"
+                            },
+                            "stamp_duty": {
+                                "buy": "0.003",
+                                "sell": "0.00"
+                            },
+                            "exchange_transaction_charges": {
+                                "nse": "0.00297",
+                                "bse": {
+                                    "default": "0.00345",
+                                    "group_rates": {
+                                        "A,B,E,F,FC,G,GC,W,T": "0.00375",
+                                        "X,XT,Z": "0.1",
+                                        "R,SS,ST,ZP": "1.0"
+                                    }
+                                }
+                            },
+                            "sebi_turnover_charges": {
+                                "buy": "0.0001",
+                                "sell": "0.0001"
+                            },
+                            "ipft_charges": {
+                                "nse": "0.0001"
+                            },
+                            "dp_charges": null
+                        },
+                        "delivery": {
+                            "securities_transaction_tax_stt": {
+                                "buy": "0.1",
+                                "sell": "0.1"
+                            },
+                            "stamp_duty": {
+                                "buy": "0.015",
+                                "sell": "0.00"
+                            },
+                            "exchange_transaction_charges": {
+                                "nse": "0.00297",
+                                "bse": {
+                                    "default": "0.00345",
+                                    "group_rates": {
+                                        "A,B,E,F,FC,G,GC,W,T": "0.00375",
+                                        "X,XT,Z": "0.1",
+                                        "R,SS,ST,ZP": "1.0"
+                                    }
+                                }
+                            },
+                            "sebi_turnover_charges": {
+                                "buy": "0.0001",
+                                "sell": "0.0001"
+                            },
+                            "ipft_charges": {
+                                "nse": "0.0001"
+                            },
+                            "dp_charges": {
+                                "depository": {
+                                    "male": "3.5",
+                                    "female": "3.25"
+                                },
+                                "groww": {
+                                    "charge": "16.5",
+                                    "waiver_below_debit_value": "100"
+                                }
+                            }
+                        }
+                    }
+                },
+                "mtf_charges": {
+                    "brokerage_rate_percent": "0.1",
+                    "interest_rate_per_annum_percent": "14.95",
+                    "intraday_to_mtf_conversion": {
+                        "brokerage_rate_percent": "0.1"
+                    }
+                },
+                "pledge_charges": {
+                    "per_isin": "20.00"
+                },
+                "buyback_charges": {
+                    "brokerage_per_transaction": "20.00",
+                    "dp_charges_per_company": "20.00",
+                    "dp_waiver_below_debit_value": "100"
+                },
+                "penalties": {
+                    "auto_square_off": {
+                        "charge": "50.00",
+                        "unit": "per_position",
+                        "description": "for open intraday positions by system"
+                    },
+                    "auction": {
+                        "charge": "as_per_exchange",
+                        "description": "if unable to deliver a stock (not in demat)"
+                    },
+                    "delayed_payment_dpc": {
+                        "rate_percent_per_day": "0.05",
+                        "inclusive_of_gst": true,
+                        "interest_type": "simple",
+                        "compounding": "monthly"
+                    }
+                },
+                "other_charges": {
+                    "demat_remat": {
+                        "per_certification": "150.00",
+                        "courier_charges": true
+                    },
+                    "failed_demat_transaction": {
+                        "per_isin": "50.00"
+                    },
+                    "pledge_invocation": "20.00",
+                    "statement_request": {
+                        "email": "0.00",
+                        "physical_per_page": "10.00"
+                    },
+                    "kyc_modification_request": "50.00",
+                    "kra_upload_download": "50.00",
+                    "delivery_instruction_slip": {
+                        "first_10_leaves": "0.00",
+                        "additional_10_leaves": "100.00",
+                        "courier_charges": true
+                    },
+                    "physical_cmr": {
+                        "charge": "20.00",
+                        "courier_charges": true
+                    },
+                    "courier_charges": {
+                        "max": "100.00",
+                        "or_actual": true
+                    },
+                    "inter_settlement": {
+                        "depository": "3.5",
+                        "groww": "16.5",
+                        "gst_applicable": true
+                    },
+                    "restat_soa_redemption": {
+                        "charge": "20.00",
+                        "gst_applicable": true
+                    },
+                    "ddpi_charges": {
+                        "charge": "100.00",
+                        "gst_applicable": true
+                    },
+                    "depository_charges_women": "3.25"
+                },
+                "gst": {
+                    "on": [
+                        "brokerage",
+                        "dp_charges",
+                        "exchange_transaction_charges",
+                        "sebi_turnover_charges",
+                        "ipft",
+                        "auto_square_off",
+                        "delayed_payment_charges",
+                        "ddpi_charges",
+                        "kyc_modification_request",
+                        "api_charges"
+                    ],
+                    "rate": "18"
+                },
+                "registration": {
+                    "company": "Groww Invest Tech Private Limited (formerly known as Nextbillion Technology Private Limited)",
+                    "sebi_stock_broker": "INZ000301838",
+                    "nse_member_id": "90187",
+                    "bse_member_id": "6699",
+                    "mcx_member_id": "57420",
+                    "sebi_dp_id": "IN-DP-417-2019",
+                    "cdsl_dp_ids": ["88700", "88701", "88702"],
+                    "nsdl_dp_id": "IN304480"
+                }
+            }
+        }
+    }
+}

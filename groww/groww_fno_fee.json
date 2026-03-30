@@ -1,0 +1,157 @@
+{
+    "fees": {
+        "futures_and_options": {
+            "groww": {
+                "groww_charges": {
+                    "account_opening": "0.00",
+                    "amc": "0.00",
+                    "brokerage": {
+                        "flat_per_order": "20.00"
+                    }
+                },
+                "non_groww_charges": {
+                    "equity_derivatives": {
+                        "futures": {
+                            "stt_ctt": {
+                                "buy": "0.00",
+                                "sell": "0.02"
+                            },
+                            "stamp_duty": {
+                                "buy": "0.002",
+                                "sell": "0.00"
+                            },
+                            "exchange_transaction_charges": {
+                                "nse": "0.00173",
+                                "bse": "0.00"
+                            },
+                            "sebi_turnover_charges": {
+                                "buy": "0.0001",
+                                "sell": "0.0001"
+                            },
+                            "dp_charges": "0.00",
+                            "ipft_charges": {
+                                "nse": "0.0001"
+                            }
+                        },
+                        "options": {
+                            "stt_ctt": {
+                                "buy": "0.00",
+                                "sell": "0.1",
+                                "on": "premium"
+                            },
+                            "stamp_duty": {
+                                "buy": "0.003",
+                                "sell": "0.00"
+                            },
+                            "exchange_transaction_charges": {
+                                "nse": "0.03503",
+                                "bse": "0.0325",
+                                "on": "premium"
+                            },
+                            "sebi_turnover_charges": {
+                                "buy": "0.0001",
+                                "sell": "0.0001"
+                            },
+                            "dp_charges": "0.00",
+                            "ipft_charges": {
+                                "nse": "0.0005"
+                            }
+                        }
+                    },
+                    "commodity_derivatives": {
+                        "futures": {
+                            "stt_ctt": {
+                                "buy": "0.00",
+                                "sell": "0.01"
+                            },
+                            "stamp_duty": {
+                                "buy": "0.002",
+                                "sell": "0.00"
+                            },
+                            "exchange_transaction_charges": {
+                                "mcx": "0.0021",
+                                "nse": "0.0001"
+                            },
+                            "sebi_turnover_charges": {
+                                "buy": "0.0001",
+                                "sell": "0.0001"
+                            },
+                            "dp_charges": "0.00",
+                            "ipft_charges": "0.00"
+                        },
+                        "options": {
+                            "stt_ctt": {
+                                "buy": "0.00",
+                                "sell": "0.05",
+                                "on": "premium"
+                            },
+                            "stamp_duty": {
+                                "buy": "0.003",
+                                "sell": "0.00"
+                            },
+                            "exchange_transaction_charges": {
+                                "mcx": "0.0418",
+                                "nse": "0.001"
+                            },
+                            "sebi_turnover_charges": {
+                                "buy": "0.0001",
+                                "sell": "0.0001"
+                            },
+                            "dp_charges": "0.00",
+                            "ipft_charges": "0.00"
+                        }
+                    }
+                },
+                "penalties": {
+                    "auto_square_off": {
+                        "charge": "50.00",
+                        "unit": "per_position",
+                        "description": "for open intraday positions by system"
+                    },
+                    "auction": {
+                        "charge": "as_per_exchange",
+                        "description": "if unable to deliver a stock (not in demat)"
+                    },
+                    "delayed_payment_dpc": {
+                        "rate_percent_per_day": "0.05",
+                        "inclusive_of_gst": true,
+                        "interest_type": "simple",
+                        "compounding": "monthly"
+                    },
+                    "cash_shortfall": {
+                        "rate_percent_per_day": "0.045"
+                    }
+                },
+                "other_charges": {
+                    "pledge_per_isin": "20.00",
+                    "api_charges_per_month": "499.00",
+                    "physical_delivery_per_transaction": "20.00"
+                },
+                "gst": {
+                    "on": [
+                        "brokerage",
+                        "dp_charges",
+                        "exchange_transaction_charges",
+                        "sebi_turnover_charges",
+                        "ipft",
+                        "auto_square_off",
+                        "delayed_payment_charges",
+                        "ddpi_charges",
+                        "api_charges"
+                    ],
+                    "rate": "18"
+                },
+                "registration": {
+                    "company": "Groww Invest Tech Private Limited (formerly known as Nextbillion Technology Private Limited)",
+                    "sebi_stock_broker": "INZ000301838",
+                    "nse_member_id": "90187",
+                    "bse_member_id": "6699",
+                    "mcx_member_id": "57420",
+                    "sebi_dp_id": "IN-DP-417-2019",
+                    "cdsl_dp_ids": ["88700", "88701", "88702"],
+                    "nsdl_dp_id": "IN304480"
+                }
+            }
+        }
+    }
+}
